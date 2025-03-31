@@ -15,14 +15,15 @@ Este projeto simula um sistema simples de cadastro de animais utilizando conceit
 
 ## 🗂 Estrutura do Projeto
 
-| Arquivo | Descrição |
-|--------|-----------|
-| `Animal.java` | Classe abstrata base para todos os animais |
-| `Cachorro.java` | Classe concreta que representa um cachorro |
-| `Gato.java` | Classe concreta que representa um gato |
-| `SistemaCadastro.java` | Responsável por cadastrar e listar os animais |
-| `Principal.java` | Classe com o método `main`, que executa o sistema |
-| `README.md` | Este arquivo de documentação |
+| Arquivo                | Descrição                                               |
+|------------------------|---------------------------------------------------------|
+| `Animal.java`          | Classe abstrata base para todos os animais             |
+| `Cachorro.java`        | Classe concreta que representa um cachorro             |
+| `Gato.java`            | Classe concreta que representa um gato                 |
+| `SistemaCadastro.java` | Responsável por cadastrar e listar os animais          |
+| `Principal.java`       | Classe com o método `main`, que executa o sistema      |
+| `README.md`            | Este arquivo de documentação                           |
+
 
 ---
 
