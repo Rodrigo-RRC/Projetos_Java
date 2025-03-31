@@ -1,106 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Java - Rodrigo Ribeiro Carvalho</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Java de Rodrigo Ribeiro Carvalho</title>
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #000000, #1a1a1a);
-      color: #fff;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
       min-height: 100vh;
-    }
-    header {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
       padding: 2rem;
-      text-align: center;
-      animation: fadeDown 1.2s ease-out;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    h1 {
+      font-size: 2.5rem;
+      animation: fadeInUp 1s ease forwards;
     }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 3rem 1rem;
-    }
-    .project {
-      background: #1e1e1e;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 12px #00c6ff22;
-      max-width: 600px;
-      animation: fadeUp 1.2s ease-out;
-    }
-    .project h2 {
-      margin-top: 0;
-      color: #ffd700;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .project p {
-      color: #ccc;
-    }
-    .project a {
-      color: #00c6ff;
+    h1 span {
       display: inline-block;
-      margin-right: 1rem;
+      transform: translateY(-20px);
+      opacity: 0;
+      animation: bounceIn 1s ease forwards;
+    }
+    @keyframes bounceIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .subtitulo {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      margin-top: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 600px;
+      opacity: 0;
+      animation: fadeInUp 2s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    .card h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #00d1ff;
       text-decoration: none;
-      transition: transform 0.2s ease;
+      font-weight: bold;
     }
-    .project a:hover {
-      transform: scale(1.05);
+
+    a:hover {
+      text-decoration: underline;
     }
+
     footer {
-      text-align: center;
+      margin-top: auto;
       padding: 1rem;
       font-size: 0.9rem;
-      color: #aaa;
-      border-top: 1px solid #333;
-      background-color: #111;
-    }
-    @keyframes fadeDown {
-      0% { transform: translateY(-30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-    @keyframes fadeUp {
-      0% { transform: translateY(30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
+      opacity: 0;
+      animation: fadeInUp 2s ease forwards;
+      animation-delay: 2s;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Portfólio Java de Rodrigo Ribeiro Carvalho ☕</h1>
-    <p>Projetos de POO com herança, polimorfismo, encapsulamento e prática real.</p>
-  </header>
+  <h1>
+    <span>🚀</span> Portfólio Java de Rodrigo Ribeiro Carvalho
+  </h1>
+  <div class="subtitulo">
+    Projetos com herança, polimorfismo, encapsulamento e prática real.
+  </div>
 
-  <main>
-    <div class="project">
-      <h2>✨ Cofrinho de Moedas</h2>
-      <p>Simula um cofrinho digital com suporte a moedas (Real, Dólar e Euro), usando herança e menu via console.</p>
-      <a href="https://replit.com/@rodrigorcdev/cofrinhomoedas" target="_blank">🔗 Abrir no Replit</a>
-      <a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/cofrinho_moedas" target="_blank">📁 Ver no GitHub</a>
-    </div>
-  </main>
+  <div class="card">
+    <h2>🌟 Cofrinho de Moedas</h2>
+    <p>Simula um cofrinho digital com suporte a moedas (Real, Dólar e Euro), usando herança e menu via console.</p>
+    <p><a href="https://replit.com/@rodrigorcdev/cofrinhomoedas" target="_blank">Abrir no Replit 🔗</a></p>
+    <p><a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/cofrinho_moedas" target="_blank">Ver no GitHub 💻</a></p>
+  </div>
 
   <footer>
-    ✨ Atualizado em março de 2025 | Desenvolvido com foco, cafeína e propósito. ☕
+    ✨ Atualizado em março de 2025 | Desenvolvido com foco, cafeína e propósito ☕
   </footer>
 </body>
 </html>
