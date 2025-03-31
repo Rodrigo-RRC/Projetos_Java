@@ -8,7 +8,7 @@ Cada subpasta representa um projeto independente, com sua própria estrutura de 
 
 ## 📁 Projetos incluídos
 
-### ☕ [Java | Cofrinho de Moedas](./cofrinho-moedas)
+### ☕ [Java | Cofrinho de Moedas](./cofrinho_moedas)
 Simulação de um cofrinho digital com uso de herança, polimorfismo e menu interativo.
 
 ---
