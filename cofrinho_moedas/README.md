@@ -40,6 +40,10 @@ Este projeto simula um cofrinho digital com suporte a moedas de diferentes país
 
 ---
 
+▶️ [Testar no Replit](https://replit.com/@rodrigorcdev/cofrinhomoedas)
+
+---
+
 ## 📎 Requisitos
 
 - Java 17 (ou compatível)
