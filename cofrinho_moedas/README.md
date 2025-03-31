@@ -20,14 +20,21 @@ O usuário interage via console e pode **adicionar**, **remover**, **listar** e 
 
 ---
 
-## 📦 Estrutura de Classes
+### 🧱 Estrutura de Classes
 
-| Classe       | Responsabilidade |
-|--------------|------------------|
-| `Moeda`      | Classe abstrata base com o atributo `valor` e o método abstrato `converter()` |
-| `Real`, `Dolar`, `Euro` | Subclasses de `Moeda`, implementam o método `converter()` |
-| `Cofrinho`   | Gerencia a coleção de moedas com `ArrayList` e fornece os métodos de manipulação |
-| `Main`       | Classe com o menu interativo que executa as ações via terminal |
+- **`Moeda`**  
+  Classe abstrata base, com o atributo `valor` e o método abstrato `converter()`
+
+- **`Real`, `Dolar`, `Euro`**  
+  Subclasses de `Moeda`, cada uma implementa o método `converter()` com a lógica da sua conversão
+
+- **`Cofrinho`**  
+  Classe que gerencia uma coleção de moedas com `ArrayList`  
+  Possui métodos para adicionar, remover, listar e calcular o total convertido
+
+- **`Main`**  
+  Classe com o menu interativo via console (terminal), que executa as ações escolhidas pelo usuário
+
 
 ---
 
