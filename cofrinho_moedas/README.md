@@ -13,38 +13,37 @@ O usuário interage via console e pode **adicionar**, **remover**, **listar** e 
 
 ## ✅ Funcionalidades
 
-- Adicionar moedas: Real, Dólar e Euro
-- Remover moedas específicas
-- Listar todas as moedas inseridas
-- Calcular o valor total convertido para Real (R$)
+- ➕ Adicionar moedas: Real, Dólar e Euro  
+- ➖ Remover moedas específicas  
+- 📋 Listar todas as moedas inseridas  
+- 💵 Calcular o valor total convertido para Real (R$)
 
 ---
 
-### 🧱 Estrutura de Classes
+## 🧱 Estrutura de Classes
 
-- **`Moeda`**  
-  Classe abstrata base, com o atributo `valor` e o método abstrato `converter()`
+- 🧠 **`Moeda`**  
+  Classe **abstrata base**, com o atributo `valor` e o método abstrato `converter()`
 
-- **`Real`, `Dolar`, `Euro`**  
-  Subclasses de `Moeda`, cada uma implementa o método `converter()` com a lógica da sua conversão
+- 💱 **`Real`, `Dolar`, `Euro`**  
+  Subclasses de `Moeda`, cada uma implementa o método `converter()` com a lógica da sua moeda
 
-- **`Cofrinho`**  
-  Classe que gerencia uma coleção de moedas com `ArrayList`  
+- 🗃️ **`Cofrinho`**  
+  Classe que **gerencia a coleção de moedas** com `ArrayList`  
   Possui métodos para adicionar, remover, listar e calcular o total convertido
 
-- **`Main`**  
-  Classe com o menu interativo via console (terminal), que executa as ações escolhidas pelo usuário
-
+- 🧾 **`Main`**  
+  Classe com o **menu interativo** via console, que executa as ações escolhidas pelo usuário
 
 ---
 
 ## 🧠 Conceitos Aplicados
 
-- Programação Orientada a Objetos (POO)
-- Herança e Polimorfismo com `@Override`
-- Encapsulamento com atributos protegidos
-- Uso de `ArrayList` para armazenar objetos
-- Controle de fluxo com `switch-case` e `do-while`
+- 🧱 Programação Orientada a Objetos (POO)  
+- 🔁 Herança e polimorfismo com `@Override`  
+- 🔐 Encapsulamento com atributos protegidos  
+- 📦 Uso de `ArrayList` para armazenar objetos  
+- 🔄 Controle de fluxo com `switch-case` e `do-while`
 
 ---
 
@@ -58,8 +57,8 @@ O usuário interage via console e pode **adicionar**, **remover**, **listar** e 
 
 ## 📌 Requisitos
 
-- Java 17 (ou compatível)
-- IDE Eclipse ou Replit (versão online)
+- ☕ Java 17 (ou compatível)  
+- 🧰 IDE Eclipse ou ambiente online (como o Replit)
 
 ---
 
@@ -68,4 +67,4 @@ O usuário interage via console e pode **adicionar**, **remover**, **listar** e 
 
 ---
 
-🦾 _"Pode até demorar… mas quem luta vence."_  
+🦾 _"Pode até demorar… mas quem luta vence."_
