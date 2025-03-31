@@ -1,29 +1,29 @@
-## 🗂️ Visão Geral do Projeto: Sistema de Cadastro de Animais
+## 🐾 Sistema de Cadastro de Animais
 
-Este projeto demonstra conceitos de Programação Orientada a Objetos em Java, simulando o cadastro e listagem de animais com foco em **herança**, **polimorfismo**, **abstração** e **encapsulamento**.
-
----
-
-### 📁 Estrutura dos Arquivos
-
-| 📄 Arquivo                | 📌 Descrição                                                                 |
-|---------------------------|------------------------------------------------------------------------------|
-| `Animal.java`             | 🧬 Classe abstrata base para todos os animais do sistema                    |
-| `Cachorro.java`           | 🐶 Classe concreta que representa um cachorro                               |
-| `Gato.java`               | 🐱 Classe concreta que representa um gato                                   |
-| `SistemaCadastro.java`    | 🗃️ Responsável pelo cadastro e listagem dos animais                         |
-| `Principal.java`          | 🚀 Classe com o método `main`, ponto de entrada da aplicação                 |
-| `README.md`               | 📝 Arquivo de documentação com descrição técnica e estrutura do projeto      |
+Projeto didático em Java, com foco nos pilares da Programação Orientada a Objetos (POO), simulando um sistema simples de cadastro de animais.
 
 ---
 
-### 🚦 Conceitos Aplicados
+### 📁 Estrutura do Projeto
 
-- **Abstração**: Generalização do conceito de animal na superclasse `Animal`
-- **Herança**: `Cachorro` e `Gato` herdam de `Animal`
-- **Polimorfismo**: Cada classe implementa seu próprio comportamento de som
-- **Encapsulamento**: Atributos protegidos e métodos públicos de acesso
+| Arquivo                  | Descrição                                                         |
+|--------------------------|-------------------------------------------------------------------|
+| `Animal.java`            | Classe abstrata base para todos os animais                        |
+| `Cachorro.java`          | Classe concreta que representa um cachorro                        |
+| `Gato.java`              | Classe concreta que representa um gato                            |
+| `SistemaCadastro.java`   | Responsável por cadastrar e listar os animais                     |
+| `Principal.java`         | Classe principal com o método `main`, que executa o sistema       |
+| `README.md`              | Arquivo de documentação                                            |
 
 ---
 
-> 💡 *Este é um projeto didático, com foco em fixar conceitos fundamentais de POO na prática real.*
+### 🧠 Conceitos Aplicados
+
+- **Abstração**: Classe `Animal` representa um conceito genérico.
+- **Herança**: `Cachorro` e `Gato` herdam de `Animal`.
+- **Polimorfismo**: Cada animal implementa seu próprio som.
+- **Encapsulamento**: Atributos protegidos com acesso controlado.
+
+---
+
+> Este projeto foi criado com fins educativos, destacando boas práticas e organização de código em Java.
