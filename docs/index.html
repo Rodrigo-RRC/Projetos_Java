@@ -1,59 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Java | Rodrigo Ribeiro Carvalho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Java - Rodrigo Ribeiro Carvalho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
-      color: #eee;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      padding: 1.5rem;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 2rem;
       text-align: center;
+      animation: fadeDown 1.2s ease-out;
     }
     header h1 {
       margin: 0;
       font-size: 2rem;
     }
     header p {
-      margin-top: 0.5rem;
+      margin: 0.5rem 0 0;
       font-size: 1rem;
+      opacity: 0.9;
     }
     main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 1rem;
     }
     .project {
-      background-color: #1e1e1e;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      transition: 0.3s ease;
-    }
-    .project:hover {
-      border-color: #0072ff;
-      box-shadow: 0 0 10px #0072ff88;
+      background: #1e1e1e;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #00c6ff22;
+      max-width: 600px;
+      animation: fadeUp 1.2s ease-out;
     }
     .project h2 {
       margin-top: 0;
+      color: #ffd700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .project p {
+      color: #ccc;
     }
     .project a {
       color: #00c6ff;
+      display: inline-block;
+      margin-right: 1rem;
       text-decoration: none;
-      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+    .project a:hover {
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem 1rem;
+      padding: 1rem;
       font-size: 0.9rem;
-      color: #888;
+      color: #aaa;
+      border-top: 1px solid #333;
+      background-color: #111;
+    }
+    @keyframes fadeDown {
+      0% { transform: translateY(-30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
@@ -64,15 +91,12 @@
   </header>
 
   <main>
-    <section class="project">
-      <h2>🌟 Cofrinho de Moedas</h2>
+    <div class="project">
+      <h2>✨ Cofrinho de Moedas</h2>
       <p>Simula um cofrinho digital com suporte a moedas (Real, Dólar e Euro), usando herança e menu via console.</p>
-      <p><a href="https://replit.com/@rodrigorcdev/cofrinhomoedas" target="_blank">Abrir no Replit 🔗</a></p>
-      <p><a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/cofrinho_moedas" target="_blank">Ver no GitHub 💻</a></p>
-    </section>
-    
-    <!-- Quando houver mais projetos, copiar o bloco acima e mudar o conteúdo -->
-
+      <a href="https://replit.com/@rodrigorcdev/cofrinhomoedas" target="_blank">🔗 Abrir no Replit</a>
+      <a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/cofrinho_moedas" target="_blank">📁 Ver no GitHub</a>
+    </div>
   </main>
 
   <footer>
