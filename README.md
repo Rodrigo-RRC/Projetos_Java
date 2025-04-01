@@ -2,7 +2,7 @@
 
 Este repositório reúne projetos práticos desenvolvidos em Java por **Rodrigo Ribeiro Carvalho**, com foco em Programação Orientada a Objetos, organização de código e clareza na apresentação.
 
-Cada subpasta representa um projeto independente, com seu código-fonte funcional, diagrama (quando aplicável) e README explicativo.
+Cada subpasta representa um projeto independente, com seu código-fonte funcional, README explicativo e, quando aplicável, vídeo demonstrativo.
 
 ---
 
@@ -18,19 +18,19 @@ Simulação de animais com herança e sobreposição de métodos. Projeto voltad
 
 ## 🎯 Sobre este repositório
 
-Este portfólio foi construído para demonstrar:
+Esta organização foi construída com atenção a:
 
-- Prática em Programação Orientada a Objetos (POO)
+- Prática real de Programação Orientada a Objetos (POO)
 - Uso de herança, polimorfismo e encapsulamento
 - Estruturação modular do código em múltiplas classes
-- Projetos comentados e organizados por temas
+- Organização clara de arquivos e exemplos funcionais
 
 ---
 
 ## 👤 Sobre o autor
 
 **Rodrigo Ribeiro Carvalho**  
-Corretor de imóveis em transição de carreira para a área de dados e tecnologia. Estudante de Ciência de Dados pela UNINTER, com formação complementar em Análise de Dados pelo Google/Coursera. Também desenvolve projetos em Python, Power BI e Inteligência Artificial.
+Corretor de imóveis em transição de carreira para a área de dados e tecnologia. Estudante de Ciência de Dados pela UNINTER, com formação complementar em Análise de Dados pelo Google/Coursera. Também desenvolve projetos com Python, Power BI e Inteligência Artificial.
 
 - [LinkedIn](https://www.linkedin.com/in/rodrigo-ribeiro-datascience)
 - [Portfólio completo](https://github.com/Rodrigo-RRC)
