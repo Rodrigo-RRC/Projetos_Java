@@ -1,87 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projetos Java</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f9f9f9;
-      color: #333;
-      margin: 0;
+      text-align: center;
       padding: 40px;
     }
 
     h1 {
-      text-align: center;
-      color: #2e86c1;
+      color: #2b7bb9;
+      margin-bottom: 20px;
     }
 
     .accordion {
-      width: 100%;
+      width: 90%;
       max-width: 600px;
-      margin: 30px auto;
+      margin: auto;
     }
 
     .accordion-item {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-bottom: 10px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 10px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
     }
 
     .accordion-header {
-      padding: 15px;
-      cursor: pointer;
+      padding: 20px;
       font-weight: bold;
-      font-size: 1.1em;
-      transition: background-color 0.3s;
-    }
-
-    .accordion-header:hover {
-      background-color: #e9f5ff;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .accordion-content {
       display: none;
-      padding: 15px;
+      padding: 20px;
+      border-top: 1px solid #eee;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .popup {
-      display: none;
       position: fixed;
-      top: 25px;
-      right: 25px;
-      background-color: #ffeaa7;
+      top: 20px;
+      right: 20px;
+      background-color: #fffbe6;
+      border: 1px solid #ffc107;
       padding: 15px 20px;
       border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 16px;
       font-weight: bold;
-      color: #2d3436;
-      animation: fadeOut 2s ease-out 2s forwards;
+      color: #664d03;
+      display: none;
     }
 
-    @keyframes fadeOut {
-      to {
-        opacity: 0;
-        transform: translateY(-20px);
-        display: none;
-      }
-    }
-
-    .return-button {
+    .coffee-cup {
+      font-size: 28px;
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 15px;
-      background-color: #2e86c1;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+      animation: float 1.5s ease-in-out infinite;
     }
 
-    .return-button:hover {
-      background-color: #1f5e8f;
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
     }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .emoji {
+      font-size: 20px;
+      margin-right: 8px;
+    }
+
   </style>
 </head>
 <body>
@@ -90,24 +105,43 @@
 
   <div class="accordion">
     <div class="accordion-item">
-      <div class="accordion-header" onclick="openProject('cofrinho_moedas')">💰 Cofrinho de Moedas</div>
+      <div class="accordion-header" onclick="selectProject('cofrinho')">
+        <span><span class="emoji">💰</span> Cofrinho de Moedas</span>
+        <span>+</span>
+      </div>
+      <div class="accordion-content">
+        <p><a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/cofrinho_moedas" target="_blank">➡️ Acessar Cofrinho</a></p>
+      </div>
     </div>
+
     <div class="accordion-item">
-      <div class="accordion-header" onclick="openProject('sistema_animais')">🐾 Sistema de Animais</div>
+      <div class="accordion-header" onclick="selectProject('animais')">
+        <span><span class="emoji">🐾</span> Sistema de Animais</span>
+        <span>+</span>
+      </div>
+      <div class="accordion-content">
+        <p><a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/sistema_animais" target="_blank">➡️ Acessar Sistema de Animais</a></p>
+      </div>
     </div>
   </div>
 
   <div class="popup" id="popup">
-    ☕ Ótima escolha!
+    <span class="coffee-cup">☕</span> Opa! Ótima escolha, vamos lá!
   </div>
 
   <script>
-    function openProject(projectFolder) {
-      const popup = document.getElementById('popup');
+    const items = document.querySelectorAll('.accordion-item');
+    const popup = document.getElementById('popup');
+
+    function selectProject(id) {
+      items.forEach(item => item.classList.remove('active'));
+      const clicked = event.currentTarget.parentElement;
+      clicked.classList.add('active');
+
       popup.style.display = 'block';
       setTimeout(() => {
-        window.location.href = `https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/${projectFolder}`;
-      }, 2000);
+        popup.style.display = 'none';
+      }, 2500);
     }
   </script>
 
