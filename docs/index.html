@@ -1,122 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio Java de Rodrigo Ribeiro Carvalho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos Java</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 40px;
     }
+
     h1 {
-      font-size: 2.5rem;
-      animation: fadeInUp 1s ease forwards;
-    }
-    h1 span {
-      display: inline-block;
-      transform: translateY(-20px);
-      opacity: 0;
-      animation: bounceIn 1s ease forwards;
-    }
-    @keyframes bounceIn {
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      text-align: center;
+      color: #2e86c1;
     }
 
-    .subtitulo {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      opacity: 0;
-      animation: fadeInUp 1.5s ease forwards;
-      animation-delay: 0.8s;
-    }
-
-    .card {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
-      margin-top: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    .accordion {
       width: 100%;
       max-width: 600px;
-      opacity: 0;
-      animation: fadeInUp 2s ease forwards;
-      animation-delay: 1.5s;
+      margin: 30px auto;
     }
 
-    .card h2 {
-      margin-bottom: 0.5rem;
+    .accordion-item {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
     }
 
-    a {
-      color: #00d1ff;
-      text-decoration: none;
+    .accordion-header {
+      padding: 15px;
+      cursor: pointer;
       font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .accordion-header:hover {
+      background-color: #e9f5ff;
     }
 
-    footer {
-      margin-top: auto;
-      padding: 1rem;
-      font-size: 0.9rem;
-      opacity: 0;
-      animation: fadeInUp 2s ease forwards;
-      animation-delay: 2s;
+    .accordion-content {
+      display: none;
+      padding: 15px;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      background-color: #ffeaa7;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #2d3436;
+      animation: fadeOut 2s ease-out 2s forwards;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        transform: translateY(-20px);
+        display: none;
+      }
+    }
+
+    .return-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #2e86c1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .return-button:hover {
+      background-color: #1f5e8f;
     }
   </style>
 </head>
 <body>
-  <h1>
-    <span>🚀</span> Portfólio Java de Rodrigo Ribeiro Carvalho
-  </h1>
-  <div class="subtitulo">
-    Projetos com herança, polimorfismo, encapsulamento e prática real.
+
+  <h1>Escolha seu projeto 👇</h1>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="openProject('cofrinho_moedas')">💰 Cofrinho de Moedas</div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="openProject('sistema_animais')">🐾 Sistema de Animais</div>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>🌟 Cofrinho de Moedas</h2>
-    <p>Simula um cofrinho digital com suporte a moedas (Real, Dólar e Euro), usando herança e menu via console.</p>
-    <p><a href="https://replit.com/@rodrigorcdev/cofrinhomoedas" target="_blank">Abrir no Replit 🔗</a></p>
-    <p><a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/cofrinho_moedas" target="_blank">Ver no GitHub 💻</a></p>
+  <div class="popup" id="popup">
+    ☕ Ótima escolha!
   </div>
 
-  <div class="card">
-    <h2>🐾 Sistema de Cadastro de Animais</h2>
-    <p>Permite cadastrar, listar e emitir sons de diferentes animais. Utiliza herança, classe abstrata e sobrescrita de métodos.</p>
-    <p><a href="https://replit.com/@rodrigorcdev/sistema_animais" target="_blank">Abrir no Replit 🔗</a></p>
-    <p><a href="https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/sistema_animais" target="_blank">Ver no GitHub 💻</a></p>
-  </div>
+  <script>
+    function openProject(projectFolder) {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'block';
+      setTimeout(() => {
+        window.location.href = `https://github.com/Rodrigo-RRC/Projetos_Java/tree/main/${projectFolder}`;
+      }, 2000);
+    }
+  </script>
 
-  <footer>
-    ✨ Atualizado em março de 2025 | Desenvolvido com foco, cafeína e propósito ☕
-  </footer>
 </body>
 </html>
