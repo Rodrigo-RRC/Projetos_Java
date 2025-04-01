@@ -1,39 +1,36 @@
-# Projetos Java
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Rodrigo-RRC/Projetos_Java/main/docs/assets/img_capa_java.png" width="600"/>
+</p>
 
-Este repositório é um portfólio vivo de projetos desenvolvidos em Java por **Rodrigo Ribeiro Carvalho**, com foco em lógica de programação, estrutura de sistemas e aplicação prática dos conceitos de Programação Orientada a Objetos (POO).
+<h1 align="center">☕ Projetos Java</h1>
 
-Cada subpasta representa um projeto independente, com sua própria estrutura de classes, arquivos `.java` e explicações técnicas.
+<p align="center">
+  Bem-vindo(a) ao meu repositório de projetos em Java! Aqui estão listados projetos práticos com código organizado, imagens, explicações e até vídeo demonstrativo.
+</p>
 
----
+<br/>
 
-## 📁 Projetos incluídos
-
-### ☕ [Java | Cofrinho de Moedas](./cofrinho_moedas)
-Simulação de um cofrinho digital com uso de herança, polimorfismo e menu interativo.
-
----
-
-## 🎯 Sobre este repositório
-
-Esta organização facilita a navegação entre projetos e demonstra o cuidado com:
-
-- Estrutura de pacotes e arquivos
-- Aplicação dos pilares da Programação Orientada a Objetos
-- Clareza na construção dos algoritmos
-- Evolução prática de conceitos fundamentais da linguagem Java
-
-Todos os projetos foram desenvolvidos com o objetivo de demonstrar competência técnica aplicada, aprendizado contínuo e domínio crescente da linguagem Java.
+<p align="center">
+  <a href="https://rodrigo-rrc.github.io/Projetos_Java/" target="_blank">
+    <img src="https://img.shields.io/badge/Ver%20página%20interativa-🔗-brightgreen?style=for-the-badge" alt="Ver página interativa">
+  </a>
+</p>
 
 ---
 
-## 👤 Sobre o autor
+### Projetos incluídos:
 
-**Rodrigo Ribeiro Carvalho**  
-Corretor de imóveis em transição de carreira para a área de dados e tecnologia. Estudante de Ciência de Dados pela UNINTER, com formação complementar em Análise de Dados pelo Google/Coursera e projetos práticos em Power BI, Python e Inteligência Artificial.
+- **Sistema Cofrinho de Moedas**
+- **Sistema de Animais**
+- *(Outros virão...)*
 
-- [LinkedIn](https://www.linkedin.com/in/rodrigo-ribeiro-datascience)
-- [Portfólio completo](https://github.com/Rodrigo-RRC)
+> Todos os projetos podem ser executados em sua IDE (Eclipse, VS Code etc.) ou visualizados na **página interativa com sanfona e animações** clicando no botão acima.
 
 ---
 
-📌 *Última atualização: Março de 2025*
+### Sobre mim
+
+Rodrigo Ribeiro Carvalho  
+Corretor de Imóveis | Estudante de Ciência de Dados  
+Apaixonado por tecnologia, educação e inteligência artificial.  
+Veja meu [portfólio completo](https://github.com/Rodrigo-RRC) no GitHub.
