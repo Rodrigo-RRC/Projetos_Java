@@ -35,6 +35,13 @@ adiciona e remove moedas, lista o conteúdo e vê o valor total convertido para 
 
 ---
 
+<p align="center">
+  <a href="https://rodrigo-rrc.github.io/Projetos_Java/" target="_blank">
+    <img src="https://img.shields.io/badge/⬅️ Voltar para o índice interativo-blue?style=for-the-badge" alt="Voltar para o índice interativo"/>
+  </a>
+</p>
+
+
 **Atualizado em março de 2025**  
 Desenvolvido com foco, cafeína e propósito. ☕
 
