@@ -26,4 +26,10 @@ Projeto didático em Java, com foco nos pilares da Programação Orientada a Obj
 
 ---
 
+<p align="center">
+  <a href="https://rodrigo-rrc.github.io/Projetos_Java/" target="_blank">
+    <img src="https://img.shields.io/badge/⬅️ Voltar para o índice interativo-blue?style=for-the-badge" alt="Voltar para o índice interativo"/>
+  </a>
+</p>
+
 > Este projeto foi criado com fins educativos, destacando boas práticas e organização de código em Java.
